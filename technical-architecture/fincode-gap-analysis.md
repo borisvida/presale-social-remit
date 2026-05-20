@@ -179,7 +179,7 @@ These items are desirable and referenced in the governance doc, but are not requ
 ## Must-resolve before estimation can be finalised
 
 1. **Sumsub vs Fincode KYC** — approach determines BFF scope and in-app SDK work (Bucket 3, item 1)
-2. **Card gateway selection** — which `supportedPaymentGatewayProvider` is active on SocialRemit's Fincode tenant (TrustPayments vs Stripe)? Determines which mobile SDK to integrate. Small decision but needs confirming with Joseph/Fincode.
+2. **Card gateway selection** — two scenarios to confirm with Fincode: (a) Fincode provides its own hosted card widget / native SDK that tokenises on their own PCI-compliant infrastructure (the `CUSTOM_POINT_OF_SALE` enum value may indicate this) — if so, no third-party gateway integration needed at all; (b) a specific third-party gateway (TrustPayments `SECURE_TRADING` or Stripe) is required, in which case VL integrates that gateway's mobile SDK. Either way VL stays out of PCI scope — the question is whether a separate gateway dependency exists. One sandbox test call will resolve this.
 3. **Admin portal — day-one or deferred?** — if day-one, adds scope (Bucket 3, item 2)
 4. **Push notifications — MVP or not** — affects notification service scope (Bucket 3, item 3)
 5. **Sandbox credentials** — `remitjunction.fincode.software` sandbox appears to be available; VL needs confirmed access to verify field coverage, dynamic fields, and beneficiary endpoint detail
