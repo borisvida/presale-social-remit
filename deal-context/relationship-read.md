@@ -61,3 +61,42 @@ justify over-investing presale effort — the same caution the go/no-go page mak
 
 **Revisit this page** when the commercial terms are decided and again at proposal/negotiation;
 the partner-vs-vendor question will recur.
+
+## What we're actually selling — and the discovery gap
+
+The partner-vs-vendor tension shows up concretely in *what the client thinks they are buying*.
+
+**SocialRemit considers discovery done and wants delivery.** From Joseph's side, product
+definition is *his* job and it is finished: a full Figma prototype and a November 2025
+screen-by-screen spec exist; the platform/vendor decisions are made (Fincode, Sumsub, Trust
+Payments, Volume); corridors are fixed (Ghana + Nigeria); a governance/architecture model is
+formalised; and the business rails are in place (EMI licence, $900M liquidity, AML board).
+The 19 May go-live scope was *"Flutter frontend + BFF + Fincode — the full stack,"* live in
+6–8 weeks ([open-questions.md](./open-questions.md) item 16, [client-overview.md](./client-overview.md),
+[product-vision.md](../product-management/product-vision.md), [governance-principles.md](../technical-architecture/governance-principles.md)).
+
+**What VL is selling is a build engagement** — the Flutter/RN app + the BFF/middleware layer
++ integration of Fincode, Sumsub, Trust Payments and Volume, with the BFF designed as the
+Fincode→Transpara exit ramp ([system-overview.md](../technical-architecture/system-overview.md)).
+Note the scope *grew*: the December 2025 proposal was a frontend-only "FE build" (Joseph
+wanted an asset he could keep if the backend relationship soured —
+[proposal-dec-2025.md](./proposal-dec-2025.md), [stakeholder-map.md](./stakeholder-map.md)); the
+May re-engagement is now full-stack.
+
+**The gap:** the client believes discovery is finished; VL's own analysis says critical
+pieces are unvalidated. What SocialRemit completed is *design / product-definition* discovery
+(screens, flows, vendors). What is missing is *strategic* discovery and *scope/technical*
+confirmation:
+
+- No personas or validated user research — the "built by migrants" claim is unproven ([migrant-user-research-brief.md](../product-management/research/migrant-user-research-brief.md)).
+- No competitor / white-space analysis ([competitor-research-brief.md](../product-management/research/competitor-research-brief.md)).
+- No GTM / first-10k plan; the transaction-target-vs-customer math does not reconcile.
+- Scope itself is not VL-confirmed, and the Fincode API is unverified (sandbox creds pending), so BFF build scope is still an estimate ([pre-meeting-brief.md](./pre-meeting-brief.md), [fincode-gap-analysis.md](../technical-architecture/fincode-gap-analysis.md)).
+
+**Framing implication.** VL's discovery work is not re-doing Joseph's homework — it is
+de-risking *his* delivery and *our* fixed-timeline commitment. But a founder who believes
+discovery is done can read VL discovery questions either as reassuring rigour or as an agency
+padding the bill. It must be presented as the former. This ties directly to the partner-vs-
+vendor question above: a pure delivery *vendor* just builds the Figma; a strategic *partner*
+is expected to challenge the strategy. Which one VL is determines how much discovery the
+client will actually pay for or tolerate.
